@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="margin: 5rem 0">
+      <h1>가고싶은 여행지를 검색해봐요!</h1>
+      <section id="searchBox">
+        <form name="citySearch" action="./index.html" method="get">
+          <label for="searchKeyword">가고싶은 도시 : &nbsp;</label>
+          <input
+            id="searchKeyword"
+            type="text"
+            maxlength="100"
+            minlength="1"
+            placeholder="여행지를 검색해주세요."
+            required
+          />
+          <!-- input의 name이 서밋을하면 쿼리스트링값으로 들어감 ?searchKeyword=값 형식으로 -->
+          <button type="submit">검색</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

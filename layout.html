@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Semantic Elements</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #555;
+        color: #fff;
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      nav ul li {
+        display: inline-block;
+      }
+
+      nav ul li a {
+        color: #fff;
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+      }
+
+      main {
+        margin: 20px;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .borderBox {
+        border: 1px solid #000;
+      }
+      .flexCenter {
+        display: flex;
+        justify-content: center;
+      }
+      .borderBox div {
+        margin: 0 auto;
+      }
+      dl,
+      dd {
+        margin: 0;
+      }
+      dt {
+        text-align: start;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>나</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">홈</a></li>
+        <li><a href="#">소개</a></li>
+        <li><a href="#">서비스</a></li>
+        <li><a href="#">문의</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div style="text-align: center" class="borderBox">
+        <dl>
+          <div>
+            <img
+              src="./스크린샷 2023-06-12 오후 2.43.44.png"
+              alt="jgkang"
+              width="100"
+              height="100"
+            />
+          </div>
+          <h2>강정구</h2>
+          <div class="borderBox flexCenter">
+            <dt>mbti : &nbsp;</dt>
+            <dd>intj</dd>
+          </div>
+          <div class="borderBox flexCenter">
+            <dt>취미 : &nbsp;</dt>
+            <dd>산책</dd>
+          </div>
+          <div class="borderBox flexCenter">
+            <dt>취업하고자하는회사 : &nbsp;</dt>
+            <dd>스타트업</dd>
+          </div>
+          <div class="borderBox flexCenter">
+            <dt>skills : &nbsp;</dt>
+            <dd>html,css,js,react</dd>
+          </div>
+        </dl>
+      </div>
+    </main>
+
+    <footer>
+      <p>저작권 © 2023 웹 사이트. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
